@@ -8,6 +8,9 @@
                  [ring/ring-defaults "0.3.2"]
                  [hiccup "1.0.5"]
                  [markdown-clj "1.10.0"]
+                 [enlive "1.1.6"]
+                 [clygments "2.0.0"]
+                 [optimus "0.20.2"]
                  [stasis "2.5.0"]]
   :plugins [[lein-ring "0.12.5"]]
   :ring {:port 8080
