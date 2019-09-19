@@ -9,7 +9,14 @@
 
 (def app
   (optimus/wrap
-   (stasis/serve-pages web/get-pages)
-   (web/get-assets)
+   (stasis/serve-pages (web/get-pages))
+   web/get-assets
+   optimizations/all
+   serve-frozen-assets))
+
+(def dev-app
+  (optimus/wrap
+   (stasis/serve-pages (web/get-pages))
+   web/get-assets
    optimizations/all
    serve-live-assets))
