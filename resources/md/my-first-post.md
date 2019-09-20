@@ -21,3 +21,8 @@ and a para
 (defun greetings (&optional (name "world"))
   (format t "Hello, ~A!~%" name))
 ```
+
+``` python
+def init(x):
+  print(x)
+```

@@ -12,8 +12,9 @@
                  [optimus "0.20.2"]
                  [stasis "2.5.0"]]
   :plugins [[lein-ring "0.12.5"]]
-  :ring {:port 8080
+  :ring {:port 8880
          :handler nyssa.handler/dev-app
+         :auto-refresh? true
          :auto-reload? true}
   :main ^:skip-aot nyssa.core
   :target-path "target/%s"

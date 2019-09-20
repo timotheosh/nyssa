@@ -9,7 +9,8 @@
             [nyssa.highlight :as highlight]))
 
 (defn get-assets []
-  (assets/load-assets "public" [#".*"]))
+  (concat (assets/load-assets "public" [#".*"])
+          (assets/load-assets "md" [#".*"])))
 
 (defn layout-page [request page]
   (html5
